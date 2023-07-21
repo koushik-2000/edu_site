@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>university web design</title>
+    <meta charset="UTF-8"> 
+    <meta name="description" content="this is a college university site">
+    <meta name="keywords" content="university, college, ug"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="koushik">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;600;700&display=swap" rel="stylesheet">
+    <!-- linking it to html is more permorming than import to css -->
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="#"><img src="logo.png" alt="logo"></a>
+        <!-- logo image width in pixels -->
+        <a href=""><img class="menu" src="menu.svg" alt="menu_icon" onclick="showmenu()"></a>
+        <div class="nav_links" id="nav_links">
+            <ul>
+                <div class="close_box">
+                    <a href="#"><img class="close" src="close.svg" alt="close" onclick="hidemenu()"></a>
+                </div>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">course</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <!-- dont use flex un-necessarily it consumes computing power -->
+        <!-- google fonts bold is more efficient than normal font-weight (need 400,700 add it from fonts) -->
+    </nav>
+    <div class="text">
+        <h1>world's biggest university</h1>
+        <p>making web sites is one of the easiest things in the world. you just need to learn <span>html,css,<br>javascript</span> and you are good to go.</p>
+        <a href="" class="home_btn">visit us to know more</a>
+    </div>
+</section>
+<!-- courses section -->
+<section class="course">
+    <h1>courses we offer</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="col">
+            <h3>intermediate</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam minus amet eligendi voluptatum beatae ullam assumenda obcaecati nobis, magnam in excepturi quisquam consectetur asperiores facere perferendis reprehenderit porro eius recusandae.</p>
+        </div>
+        <div class="col">
+            <h3>degree</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam minus amet eligendi voluptatum beatae ullam assumenda obcaecati nobis, magnam in excepturi quisquam consectetur asperiores facere perferendis reprehenderit porro eius recusandae.</p>
+        </div>
+        <div class="col">
+            <h3>post graduation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam minus amet eligendi voluptatum beatae ullam assumenda obcaecati nobis, magnam in excepturi quisquam consectetur asperiores facere perferendis reprehenderit porro eius recusandae.</p>
+        </div>
+    </div>
+</section>
+<!-- campus section -->
+<section class="campus">
+    <h1>our global campus</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+     <div class="row">
+        <div class="campus-col">
+            <img src="london.png" alt="london_img">
+            <div class="layer">
+                <h3>london</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="newyork.png" alt="london_img">
+            <div class="layer">
+                <h3>newyork</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="washington.png" alt="london_img">
+            <div class="layer">
+                <h3>washington</h3>
+            </div>
+        </div>
+     </div>               
+</section>
+<!-- facilities -->
+<div class="facilities">
+    <h1>our facilities</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="library.png" alt="library">
+            <h3>largest library</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, in molestias, maiores nobis quisquam reiciendis eaque, quam numquam quia dolores sint dolorem repellat veniam beatae odit odio vero tempora laboriosam?</p>
+        </div>
+        <div class="facilities-col">
+            <img src="basketball.png" alt="basketball">
+            <h3>largest play area</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, in molestias, maiores nobis quisquam reiciendis eaque, quam numquam quia dolores sint dolorem repellat veniam beatae odit odio vero tempora laboriosam?</p>
+        </div>
+        <div class="facilities-col">
+            <img src="cafeteria.png" alt="cafeteria">
+            <h3>tasty and healthy food</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, in molestias, maiores nobis quisquam reiciendis eaque, quam numquam quia dolores sint dolorem repellat veniam beatae odit odio vero tempora laboriosam?</p>
+        </div>
+    </div>
+</div>
+<!-- testimonials -->
+<section class="testimonial">
+    <h1>what our student's say</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="user1.jpg" alt="girl">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus amet numquam reprehenderit quam reiciendis! Sapiente excepturi recusandae molestiae in voluptate, cum vel ipsam neque nisi?</p>
+                <div>
+                    <h3>christine berkly</h3>
+                    <img src="star.png" alt="star-rating">
+                    <img src="star.png" alt="star-rating">
+                    <img src="star.png" alt="star-rating">
+                    <img src="star.png" alt="star-rating">
+                    <img src="half-star.png" alt="star-rating">
+                </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="user2.jpg" alt="girl">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus amet numquam reprehenderit quam reiciendis! Sapiente excepturi recusandae molestiae in voluptate, cum vel ipsam neque nisi?</p>
+            <div>
+                <h3>david byer</h3>
+                <img src="star.png" alt="star-rating">
+                <img src="star.png" alt="star-rating">
+                <img src="star.png" alt="star-rating">
+                <img src="half-star.png" alt="star-rating">
+                <img src="half-star.png" alt="star-rating">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- call to action -->
+<div class="enroll">
+    <h1>enroll for our online courses <br> any where from the world.</h1>
+    <a class="ebtn" href="#">contact us</a>
+</div>
+<!-- footer -->
+<div class="footer">
+    <h4>about us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis et aspernatur temporibus veritatis dolor laudantium fugiat error necessitatibus, consequuntur modi, velit sit dignissimos repellat recusandae quibusdam incidunt numquam quod excepturi totam? Quidem maiores praesentium possimus! Facere pariatur, perferendis quis eaque laudantium est! Saepe asperiores, laboriosam iure ad corrupti quidem illo!</p>
+    <img src="facebook.png" alt="facebook">
+    <img src="mail.png" alt="mail">
+    <img src="linkedin.png" alt="linkedin">
+    <img src="instagram.png" alt="instagram">
+    <div class="care_of">
+        <p>made with <img src="heart.png" alt="heart"> and care by koushik</p>
+    </div>
+</div>
+
+<script>
+    var navlinks = document.getElementById("nav_links");
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+    function hidemenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

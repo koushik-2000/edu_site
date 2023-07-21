@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+.header{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+}
+nav img{
+    width:150px;
+}
+.nav_links{
+    width: 50vw;
+    text-align: right;
+}
+.nav_links ul li{
+    display: inline-block;
+    padding: 0 5%;
+}
+.nav_links ul li a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.nav_links ul li::after{
+    display: block;
+    content: "";
+    background-color: #F44336;
+    width: 0;
+    height: 3px;
+    transition: 0.2s;
+}
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+.close_box{
+    text-align: left;
+    padding: 5px;
+}
+.close{
+    width: 7vw;
+    display: none;
+}
+.menu{
+    display: none;
+    width: 10vw;
+}
+.text{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.text h1{
+    font-size: 4em;
+}
+.text p{
+    margin: 3vh auto 7vh;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.home_btn{
+    text-decoration: none;
+    background: transparent;
+    padding: 1.5vh 3vw;
+    border: solid .2vw white;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.home_btn:hover{
+    background: #F44336;
+    transition: 1s;
+}
+
+/* course */
+.course,.campus{
+    width: 80%;
+    margin: 5% auto 5%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.course>h1,.campus>h1,.facilities>h1,.testimonial>h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    margin: 1.5% 0;
+}
+.course>p,.campus>p,.facilities>p,.testimonial>p{
+    color: #777;
+    font-size: 1.1em;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0;
+}
+.col{
+    width: 30%;
+    background-color: #eccece;
+    text-transform: lowercase;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+.col>h3{
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin: 5%;
+    font-weight: 700;
+}
+.col>p{
+    margin: 3% 8% 8%;
+}
+.col:hover{
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.7);
+}
+/* campus */
+.campus{
+    margin: 100px auto;
+}
+.campus>.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.campus img{
+    border-radius: 30px;
+    width: inherit;
+    float: left;
+}
+.campus-col{
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+.campus .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+.campus .layer:hover{
+    background-color: rgba(255, 0, 0, 0.7);
+}
+.campus .layer>h3{
+    margin-top: 3%;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom:49%;
+}
+/* facilities */
+.facilities,.testimonial{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.facilities-col{
+    width: 30%;
+}
+.facilities-col img{
+    width: 100%;
+}
+.facilities-col h3{
+    font-size: 1.5em;
+    text-align: left;
+    margin: 5% 0% 3%;
+}
+.facilities-col p{
+    text-align: justify;
+    line-height: 1.5;
+}
+/* testimnial */
+.testimonial{
+    margin-top: 5%;
+}
+.testimonial-col{
+    width: 48%;
+    background-color: #fde3e3;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    border-radius: 10px;
+    position: relative;
+}
+.testimonial-col img{
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    align-self: flex-start;
+    margin: 3% 5%;
+}
+.testimonial-col p{
+    width: 75%;
+    text-align: left;
+    margin: 7% 3% 25% 0;
+    line-height: 1.5;
+}
+.testimonial-col div{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.testimonial-col div img{
+    width: 3%;
+    height: 3%;
+    margin: .5%;
+}
+/* enroll */
+.enroll{
+    background: red;
+    width: 80%;
+    margin: 150px auto 100px;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    height: 50vh;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.enroll h1{
+    color: white;
+    margin: 5%;
+    padding: 10% 0 0;
+}
+.ebtn{
+    text-decoration: none;
+    background: transparent;
+    padding: 1.5vh 3vw;
+    border: solid .2vw white;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.ebtn:hover{
+    background: #F44336;
+    transition: 1s;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 5vh;
+}
+.footer h4{
+    padding: 2%;
+    font-size: 2.5em;
+}
+.footer p{
+    width: 70%;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.footer img{
+    width: 1.5%;
+    margin: 2% 1% 1.5%;
+}
+.care_of{
+    margin: .5% auto;  text-transform: lowercase;
+}
+.care_of p{
+    font-size: 1.2em;
+    margin-bottom: 3%;
+    opacity: 0.7;
+}
+.care_of img{   
+    margin-bottom: 0px;
+    opacity: 0.7;
+}
+
+@media (max-width:700px) {
+/* header */
+    .text h1,.facilities>h1,.testimonial h1{
+        font-size: 2.2em;
+    }
+    .text p,.facilities>p,.testimonial p{
+        font-size: .8em;
+    }
+    .text .home_btn{
+        font-size: .7em;
+    }
+    .close,.menu{
+        display: inline;
+    }
+    .nav_links{
+        background: #F44336;
+        height: 100vh;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        /* transition: 1s; */
+    }
+    .nav_links ul li{
+        display: block;
+        line-height: 2;
+        text-align: left;
+        font-size: .8em;
+        padding: 1vh 10vw;
+    }
+/* course */
+    .course>h1{
+        font-size: 2em;
+        margin: 30% 0 10%;
+    }
+    .course>p,.campus>p,.testimonial-col>p{
+        font-size: 1em;
+    }
+    .row,.campus>.row{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+        margin: 10% 0 5%;
+    }
+    .col>h3,.facilities-col h3{
+        font-size: 1.5em;
+    }
+    .col>p,.facilities-col p{
+        font-size: .8em;
+    }
+/* campus */
+    .campus{
+        margin: 25% auto 0;
+    }
+    .campus>h1{
+        font-size: 1.9em;
+    }
+    .campus-col{
+        width: 100%;
+        margin: 15% auto 0;
+    }
+    .campus .layer{
+        width: 100%;
+    }
+/* facilities */
+    .facilities{
+        margin-top: 30%;
+    }
+    .facilities-col{
+        width: 100%;
+        margin: 5% auto 20%;
+    }
+    .facilities>p,.campus>p{
+        margin: 7% auto 10%;
+    }
+/* testimonial  */
+    .testimonial{
+        margin-top: 10%;
+    }
+    .testimonial-col{
+        width: 100%;
+        margin-bottom: 20%;
+        flex-direction: column;
+    }
+    .testimonial>p{
+        margin: 10% 0 20%;
+    }
+    .testimonial-col h3{
+        font-size: .9em;
+    }
+    .testimonial-col p{
+        font-size: 0.8em;
+        margin:0 auto 45%;
+    }
+    .testimonial-col div img{
+        width: 5%;
+        height: 5%;
+    }
+    .testimonial-col>img{
+        width: 20%;
+        height: 20%;
+        margin: 10% auto;
+    }
+    .enroll{
+        margin: 100px auto 50px;
+    }
+    .enroll h1{
+        font-size: 1.4em;
+        margin: 20% 15%;
+    }
+/* footer */
+    .footer h4{
+        font-size: 1.5em;
+    }
+    .footer p{
+        font-size: 0.8em;
+        margin: 5% auto;
+    }
+    .footer img{
+        width: 5%;
+    }
+    .care_of p{
+        font-size: .9em;
+    }
+    .care_of img{
+        width: 5%;
+    }
+    .care_of{
+        margin:10% auto 30%;
+    }
+}
